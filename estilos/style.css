@@ -62,7 +62,7 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 form > div.campo {
@@ -86,11 +86,11 @@ div.campo > input {
     background-color: #94f7f4;
     font-size: 1em;
     width: calc(100% - 44px);
-    transform: translateY(-9px);
     height: 100%;   
     border: none;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-9px);
 }
 
 div.campo > input:focus-within {
