@@ -6,17 +6,26 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
         <section id="login">
-            <div id="imagem">
-                
-            </div>
+            <div id="imagem"></div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a)</p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="ilogin"><span class="material-symbols-outlined">person</span></label>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu email" autocomplete="email" required maxlength="30">
+                    </div>
+                    <div class="campo">
+                        <label for="isenha"><span class="material-symbols-outlined">vpn_key</span></label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
+                    <input type="submit" value="entrar">
+                    <a href="esqueci.html">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>
